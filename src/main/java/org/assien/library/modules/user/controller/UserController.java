@@ -61,4 +61,10 @@ public class UserController {
         return userService.getOne(userWrapper);
     }
 
+    @RequestMapping(value = "/demo")
+    @ResponseBody
+    public String demo() {
+        return "abc";
+    }
+
 }
